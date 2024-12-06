@@ -29,25 +29,25 @@
         private void InitializeComponent()
         {
             groupBoxCondition_GSO = new GroupBox();
-            pictureBox1 = new PictureBox();
+            pictureBoxCondition_GSO = new PictureBox();
             label3 = new Label();
             groupBoxInput_GSO = new GroupBox();
-            label1 = new Label();
-            textBox1 = new TextBox();
+            labelInput_GSO = new Label();
+            textBoxInput_GSO = new TextBox();
             groupBoxOutput_GSO = new GroupBox();
-            label2 = new Label();
-            textBox2 = new TextBox();
+            labelOutput_GSO = new Label();
+            textBoxOutput_GSO = new TextBox();
             buttonDo_GSO = new Button();
-            button1 = new Button();
+            buttonWhat_GSO = new Button();
             groupBoxCondition_GSO.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxCondition_GSO).BeginInit();
             groupBoxInput_GSO.SuspendLayout();
             groupBoxOutput_GSO.SuspendLayout();
             SuspendLayout();
             // 
             // groupBoxCondition_GSO
             // 
-            groupBoxCondition_GSO.Controls.Add(pictureBox1);
+            groupBoxCondition_GSO.Controls.Add(pictureBoxCondition_GSO);
             groupBoxCondition_GSO.Controls.Add(label3);
             groupBoxCondition_GSO.Location = new Point(12, 12);
             groupBoxCondition_GSO.Name = "groupBoxCondition_GSO";
@@ -56,15 +56,15 @@
             groupBoxCondition_GSO.TabStop = false;
             groupBoxCondition_GSO.Text = "Условие";
             // 
-            // pictureBox1
+            // pictureBoxCondition_GSO
             // 
-            pictureBox1.Image = Properties.Resources.saefsd;
-            pictureBox1.Location = new Point(547, 26);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(191, 136);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
+            pictureBoxCondition_GSO.Image = Properties.Resources.saefsd;
+            pictureBoxCondition_GSO.Location = new Point(547, 26);
+            pictureBoxCondition_GSO.Name = "pictureBoxCondition_GSO";
+            pictureBoxCondition_GSO.Size = new Size(191, 136);
+            pictureBoxCondition_GSO.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBoxCondition_GSO.TabIndex = 1;
+            pictureBoxCondition_GSO.TabStop = false;
             // 
             // label3
             // 
@@ -77,8 +77,8 @@
             // 
             // groupBoxInput_GSO
             // 
-            groupBoxInput_GSO.Controls.Add(label1);
-            groupBoxInput_GSO.Controls.Add(textBox1);
+            groupBoxInput_GSO.Controls.Add(labelInput_GSO);
+            groupBoxInput_GSO.Controls.Add(textBoxInput_GSO);
             groupBoxInput_GSO.Location = new Point(12, 222);
             groupBoxInput_GSO.Name = "groupBoxInput_GSO";
             groupBoxInput_GSO.Size = new Size(377, 132);
@@ -86,29 +86,29 @@
             groupBoxInput_GSO.TabStop = false;
             groupBoxInput_GSO.Text = "Ввод данных";
             // 
-            // label1
+            // labelInput_GSO
             // 
-            label1.AccessibleName = "labelInput_GSO";
-            label1.AutoSize = true;
-            label1.Location = new Point(74, 48);
-            label1.Name = "label1";
-            label1.Size = new Size(114, 20);
-            label1.TabIndex = 1;
-            label1.Text = "Переменная Х:";
+            labelInput_GSO.AccessibleName = "";
+            labelInput_GSO.AutoSize = true;
+            labelInput_GSO.Location = new Point(74, 48);
+            labelInput_GSO.Name = "labelInput_GSO";
+            labelInput_GSO.Size = new Size(114, 20);
+            labelInput_GSO.TabIndex = 1;
+            labelInput_GSO.Text = "Переменная Х:";
             // 
-            // textBox1
+            // textBoxInput_GSO
             // 
-            textBox1.AccessibleName = "textBoxInput_GSO";
-            textBox1.Location = new Point(74, 84);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(172, 27);
-            textBox1.TabIndex = 0;
-            textBox1.TextChanged += textBox1_TextChanged;
+            textBoxInput_GSO.AccessibleName = "";
+            textBoxInput_GSO.Location = new Point(74, 84);
+            textBoxInput_GSO.Name = "textBoxInput_GSO";
+            textBoxInput_GSO.Size = new Size(172, 27);
+            textBoxInput_GSO.TabIndex = 0;
+            textBoxInput_GSO.TextChanged += textBox1_TextChanged;
             // 
             // groupBoxOutput_GSO
             // 
-            groupBoxOutput_GSO.Controls.Add(label2);
-            groupBoxOutput_GSO.Controls.Add(textBox2);
+            groupBoxOutput_GSO.Controls.Add(labelOutput_GSO);
+            groupBoxOutput_GSO.Controls.Add(textBoxOutput_GSO);
             groupBoxOutput_GSO.Location = new Point(395, 222);
             groupBoxOutput_GSO.Name = "groupBoxOutput_GSO";
             groupBoxOutput_GSO.Size = new Size(393, 132);
@@ -116,50 +116,53 @@
             groupBoxOutput_GSO.TabStop = false;
             groupBoxOutput_GSO.Text = "Вывод данных";
             // 
-            // label2
+            // labelOutput_GSO
             // 
-            label2.AccessibleName = "labelOutput_GSO";
-            label2.AutoSize = true;
-            label2.Location = new Point(92, 48);
-            label2.Name = "label2";
-            label2.Size = new Size(75, 20);
-            label2.TabIndex = 2;
-            label2.Text = "Результат";
+            labelOutput_GSO.AccessibleName = "";
+            labelOutput_GSO.AutoSize = true;
+            labelOutput_GSO.Location = new Point(92, 48);
+            labelOutput_GSO.Name = "labelOutput_GSO";
+            labelOutput_GSO.Size = new Size(75, 20);
+            labelOutput_GSO.TabIndex = 2;
+            labelOutput_GSO.Text = "Результат";
             // 
-            // textBox2
+            // textBoxOutput_GSO
             // 
-            textBox2.AccessibleName = "textBoxOutput_GSO";
-            textBox2.BackColor = SystemColors.Menu;
-            textBox2.Location = new Point(92, 84);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(159, 27);
-            textBox2.TabIndex = 1;
+            textBoxOutput_GSO.AccessibleName = "";
+            textBoxOutput_GSO.BackColor = SystemColors.Menu;
+            textBoxOutput_GSO.Location = new Point(92, 84);
+            textBoxOutput_GSO.Name = "textBoxOutput_GSO";
+            textBoxOutput_GSO.Size = new Size(159, 27);
+            textBoxOutput_GSO.TabIndex = 1;
             // 
             // buttonDo_GSO
             // 
+            buttonDo_GSO.AccessibleName = "";
             buttonDo_GSO.Location = new Point(548, 368);
             buttonDo_GSO.Name = "buttonDo_GSO";
             buttonDo_GSO.Size = new Size(202, 62);
             buttonDo_GSO.TabIndex = 3;
             buttonDo_GSO.Text = "Вычислить";
             buttonDo_GSO.UseVisualStyleBackColor = true;
+            buttonDo_GSO.Click += buttonDo_GSO_Click;
             // 
-            // button1
+            // buttonWhat_GSO
             // 
-            button1.AccessibleName = "buttonWhat_GSO";
-            button1.Location = new Point(478, 368);
-            button1.Name = "button1";
-            button1.Size = new Size(64, 62);
-            button1.TabIndex = 4;
-            button1.Text = "?";
-            button1.UseVisualStyleBackColor = true;
+            buttonWhat_GSO.AccessibleName = "";
+            buttonWhat_GSO.Location = new Point(478, 368);
+            buttonWhat_GSO.Name = "buttonWhat_GSO";
+            buttonWhat_GSO.Size = new Size(64, 62);
+            buttonWhat_GSO.TabIndex = 4;
+            buttonWhat_GSO.Text = "?";
+            buttonWhat_GSO.UseVisualStyleBackColor = true;
+            buttonWhat_GSO.Click += buttonWhat_GSO_Click;
             // 
             // Form1main
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button1);
+            Controls.Add(buttonWhat_GSO);
             Controls.Add(buttonDo_GSO);
             Controls.Add(groupBoxOutput_GSO);
             Controls.Add(groupBoxInput_GSO);
@@ -168,7 +171,7 @@
             Text = "Спринт 6 | Таск 0 | Вариант 20 | Губанова С.О.";
             groupBoxCondition_GSO.ResumeLayout(false);
             groupBoxCondition_GSO.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxCondition_GSO).EndInit();
             groupBoxInput_GSO.ResumeLayout(false);
             groupBoxInput_GSO.PerformLayout();
             groupBoxOutput_GSO.ResumeLayout(false);
@@ -182,12 +185,12 @@
         private GroupBox groupBoxInput_GSO;
         private GroupBox groupBoxOutput_GSO;
         private Button buttonDo_GSO;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private Label label1;
-        private Label label2;
+        private TextBox textBoxInput_GSO;
+        private TextBox textBoxOutput_GSO;
+        private Label labelInput_GSO;
+        private Label labelOutput_GSO;
         private Label label3;
-        private PictureBox pictureBox1;
-        private Button button1;
+        private PictureBox pictureBoxCondition_GSO;
+        private Button buttonWhat_GSO;
     }
 }
