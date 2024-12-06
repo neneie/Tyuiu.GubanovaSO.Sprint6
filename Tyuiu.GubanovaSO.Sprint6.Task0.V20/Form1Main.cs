@@ -6,5 +6,10 @@ namespace Tyuiu.GubanovaSO.Sprint6.Task0.V20
         {
             InitializeComponent();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
