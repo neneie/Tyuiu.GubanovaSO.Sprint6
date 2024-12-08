@@ -71,7 +71,7 @@
             groupBoxOutput_GSO.Controls.Add(dataGridViewResult_GSO);
             groupBoxOutput_GSO.Location = new Point(12, 96);
             groupBoxOutput_GSO.Name = "groupBoxOutput_GSO";
-            groupBoxOutput_GSO.Size = new Size(104, 271);
+            groupBoxOutput_GSO.Size = new Size(168, 505);
             groupBoxOutput_GSO.TabIndex = 20;
             groupBoxOutput_GSO.TabStop = false;
             groupBoxOutput_GSO.Text = "Вывод";
@@ -84,13 +84,13 @@
             dataGridViewResult_GSO.Name = "dataGridViewResult_GSO";
             dataGridViewResult_GSO.RowHeadersVisible = false;
             dataGridViewResult_GSO.RowHeadersWidth = 51;
-            dataGridViewResult_GSO.Size = new Size(86, 238);
+            dataGridViewResult_GSO.Size = new Size(156, 476);
             dataGridViewResult_GSO.TabIndex = 0;
             // 
             // groupBoxFunction_GSO
             // 
             groupBoxFunction_GSO.Controls.Add(chartFunction_GSO);
-            groupBoxFunction_GSO.Location = new Point(122, 96);
+            groupBoxFunction_GSO.Location = new Point(216, 102);
             groupBoxFunction_GSO.Name = "groupBoxFunction_GSO";
             groupBoxFunction_GSO.Size = new Size(548, 333);
             groupBoxFunction_GSO.TabIndex = 19;
@@ -153,7 +153,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(736, 443);
+            ClientSize = new Size(802, 608);
             Controls.Add(groupBoxCondition_GSO);
             Controls.Add(groupBoxOutput_GSO);
             Controls.Add(groupBoxFunction_GSO);
