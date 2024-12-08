@@ -10,7 +10,7 @@ namespace Tyuiu.GubanovaSO.Sprint6.Task3.V4
 
         DataService ds = new DataService();
         int[,] mtrx = new int[5, 5] { { -14, -7, 18, 12, -20 },
-                                         { -2, -15, -19, -19, -3 },
+                                         { -2, -4, 20, -19, 8 },
                                          { -18, -5, -10, 14, -17 },
                                          { -1, 2, -10, 0, 11 },
                                          { 6, -18, 0, 19, 16 } };
