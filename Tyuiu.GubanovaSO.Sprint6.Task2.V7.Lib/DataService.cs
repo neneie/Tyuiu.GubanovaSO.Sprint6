@@ -1,6 +1,5 @@
 ﻿using tyuiu.cources.programming.interfaces.Sprint6;
-
-namespace Tyuiu.GubanovaSO.Sprint6.Task1.V24.Lib
+namespace Tyuiu.GubanovaSO.Sprint6.Task2.V7.Lib
 {
     public class DataService : ISprint6Task2V7
     {
@@ -13,7 +12,7 @@ namespace Tyuiu.GubanovaSO.Sprint6.Task1.V24.Lib
             int count = 0;
             for (int x = startValue; x <= stopValue; x++)
             {
-                y = Math.Round(((3 * x) + 2 - (((2 * x) - x) / (Math.Cos(x) + 1))), 2);
+                y = Math.Round(3 * x + 2 - ((2 * x - x) / (Math.Cos(x) + 1)), 2);
                 valueArray[count] = y;
                 count++;
             }
