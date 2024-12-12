@@ -41,9 +41,11 @@
             buttonWhat_GSO = new Button();
             openFileDialogTask_GSO = new OpenFileDialog();
             toolTip1 = new ToolTip(components);
+            groupBox1 = new GroupBox();
             groupBoxInput_GSO.SuspendLayout();
             groupBoxOutput_GSO.SuspendLayout();
             groupBoxCondition_GSO.SuspendLayout();
+            groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // groupBoxInput_GSO
@@ -108,7 +110,7 @@
             // 
             buttonOpenFile_GSO.BackgroundImage = Properties.Resources.folder_page_white1;
             buttonOpenFile_GSO.BackgroundImageLayout = ImageLayout.Zoom;
-            buttonOpenFile_GSO.Location = new Point(25, 12);
+            buttonOpenFile_GSO.Location = new Point(0, 14);
             buttonOpenFile_GSO.Name = "buttonOpenFile_GSO";
             buttonOpenFile_GSO.Size = new Size(94, 75);
             buttonOpenFile_GSO.TabIndex = 3;
@@ -120,7 +122,7 @@
             // 
             buttonDo_GSO.BackgroundImage = Properties.Resources.page_go;
             buttonDo_GSO.BackgroundImageLayout = ImageLayout.Zoom;
-            buttonDo_GSO.Location = new Point(125, 12);
+            buttonDo_GSO.Location = new Point(116, 14);
             buttonDo_GSO.Name = "buttonDo_GSO";
             buttonDo_GSO.Size = new Size(93, 75);
             buttonDo_GSO.TabIndex = 4;
@@ -132,7 +134,7 @@
             // 
             buttonWhat_GSO.BackgroundImage = Properties.Resources.emotion_evilgrin;
             buttonWhat_GSO.BackgroundImageLayout = ImageLayout.Zoom;
-            buttonWhat_GSO.Location = new Point(1019, 12);
+            buttonWhat_GSO.Location = new Point(1001, 14);
             buttonWhat_GSO.Name = "buttonWhat_GSO";
             buttonWhat_GSO.Size = new Size(93, 75);
             buttonWhat_GSO.TabIndex = 5;
@@ -149,6 +151,17 @@
             toolTip1.ToolTipIcon = ToolTipIcon.Info;
             toolTip1.ToolTipTitle = "Подсказка";
             // 
+            // groupBox1
+            // 
+            groupBox1.Controls.Add(buttonDo_GSO);
+            groupBox1.Controls.Add(buttonWhat_GSO);
+            groupBox1.Controls.Add(buttonOpenFile_GSO);
+            groupBox1.Location = new Point(12, -2);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(1100, 92);
+            groupBox1.TabIndex = 6;
+            groupBox1.TabStop = false;
+            // 
             // FormMain
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -156,9 +169,7 @@
             BackColor = SystemColors.Control;
             BackgroundImageLayout = ImageLayout.Center;
             ClientSize = new Size(1130, 550);
-            Controls.Add(buttonWhat_GSO);
-            Controls.Add(buttonDo_GSO);
-            Controls.Add(buttonOpenFile_GSO);
+            Controls.Add(groupBox1);
             Controls.Add(groupBoxCondition_GSO);
             Controls.Add(groupBoxOutput_GSO);
             Controls.Add(groupBoxInput_GSO);
@@ -170,6 +181,7 @@
             groupBoxOutput_GSO.PerformLayout();
             groupBoxCondition_GSO.ResumeLayout(false);
             groupBoxCondition_GSO.PerformLayout();
+            groupBox1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -186,5 +198,6 @@
         private Button buttonWhat_GSO;
         private OpenFileDialog openFileDialogTask_GSO;
         private ToolTip toolTip1;
+        private GroupBox groupBox1;
     }
 }
